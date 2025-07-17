@@ -4,7 +4,6 @@ gunicorn==23.0.0
 deepface==0.0.79
 retina-face==0.0.17
 opencv-python==4.8.0.76
-Pillow==9.5.0
 pandas==1.5.3
 numpy==1.23.5
 scikit-learn==1.5.1
