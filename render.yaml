@@ -5,6 +5,5 @@ services:
     buildCommand: "pip install -r requirements.txt"
     startCommand: "gunicorn app:app"  # or your actual start command
    build:
-  environment:
-    pythonVersion: 3.10.12
-
+  env: python
+  pythonVersion: 3.11.9
