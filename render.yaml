@@ -1,8 +1,10 @@
-services:
-  - type: web
-    name: attendance-system
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"  # or your actual start command
-    build:
-    pythonVersion: 3.11.4
+build:
+  pythonVersion: 3.11.4
+  # Optional: set a specific Poetry version if needed
+  poetryVersion: 1.6.1
+
+# Optional: define build command (if not using Poetry)
+# buildCommand: "pip install -r requirements.txt"
+
+start:
+  command: "gunicorn app:app"
