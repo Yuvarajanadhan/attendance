@@ -1,10 +1,7 @@
 services:
   - type: web
-    name: deepface-api
+    name: attendance-system
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python api_server.py
-    envVars:
-      - key: PYTHONUNBUFFERED
-        value: "TRUE"
-    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"  # or your actual start command
+    pythonVersion: 3.10.12
