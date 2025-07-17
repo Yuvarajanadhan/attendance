@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: deepface-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python api_server.py
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "TRUE"
+    plan: free

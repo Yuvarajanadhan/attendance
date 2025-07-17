@@ -1,0 +1,15 @@
+Flask==2.3.3
+flask-cors==5.0.1
+gunicorn==23.0.0
+deepface==0.0.79
+retina-face==0.0.17
+opencv-python==4.8.0.76
+Pillow==9.5.0
+pandas==1.5.3
+numpy==1.23.5
+scikit-learn==1.5.1
+scipy==1.14.1
+tensorflow==2.19.0
+keras==3.9.2
+protobuf==5.29.4
+requests==2.32.3

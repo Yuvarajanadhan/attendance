@@ -1,0 +1,13 @@
+open terminal (ctrl + shift + `)
+
+camera exit key x
+
+pip install -r requirements.txt   # install the requirements
+cd model #change Directory
+python test_recognition.py #Main File Run
+python view_data.py #DBSelect 
+
+if you want to train model 
+* Delete .pkl file 
+* Add a folder /FACE_MODEL/dataset/NewFolder(Name of person)/images(minimum 15)
+*python train_model.py (/FACE_MODEL/model/)
